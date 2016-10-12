@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>Zaprosludzi.qml</file>
+        <file>Opcje.qml</file>
+        <file>OpcjeForm.ui.qml</file>
+        <file>Pokazlokalizacje.qml</file>
+        <file>PokazlokalizacjeForm.ui.qml</file>
+        <file>ZaprosludziForm.ui.qml</file>
+    </qresource>
+</RCC>
