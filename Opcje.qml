@@ -5,12 +5,11 @@ import QtQuick.Dialogs 1.2
 
 OpcjeForm
 {
-    StackView {
-        id: stack
-        initialItem: WRACACZ {}
-        anchors.fill: parent
+
+   button2.onClicked: stack.pop()
+        //anchors.fill: parent
     }
-}
+
        // anchors.fill: parent
     /*StackView {
         id: stack
