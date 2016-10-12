@@ -1,12 +1,13 @@
-import QtQuick 2.4
+import QtQuick 2.5
+import QtQuick.Controls 1.4
+import QtQuick.Layouts 1.2
+
 
 Item {
-    width: 400
-    height: 400
 
     ApplicationWindow
     {
-        id: start
+        id: opcje
         width: 500
         height: 500
         color: "#fbfbfb"
@@ -18,48 +19,72 @@ Item {
             anchors.centerIn: parent
 
         }
-    }
 
-    Button {
-        id: button1
-        x: 190
-        y: 0
-        width: 150
-        height: 90
-        text: qsTr("Zapros Ludzi")
-    }
 
-    Button {
-        id: button2
-        x: 190
-        y: 110
-        width: 150
-        height: 90
-        text: qsTr("Opcje")
-        transformOrigin: Item.Center
-    }
 
-    Button {
-        id: button3
-        x: 190
-        y: 220
-        width: 150
-        height: 90
-        text: qsTr("Pokaz lokalizacje")
-    }
-
-    Button {
-        id: button4
-        x: 190
-        y: 330
-        width: 150
-        height: 90
-        text: qsTr("Wyjscie")
-    }
-
-    Opcje {
-        x: -19
-        y: 112
-    }
+TextInput {
+    id: textInput1
+    x: 4526
+    y: 4632
+    width: 177
+    height: 33
+    text: qsTr("Text Input")
+    font.pixelSize: 12
 }
 
+Button {
+    id: button1
+    x: 4726
+    y: 4632
+    width: 112
+    height: 33
+    text: qsTr("Button")
+}
+
+Text {
+    id: text1
+    x: 4526
+    y: 4703
+    width: 177
+    height: 28
+    text: qsTr("Text")
+    font.pixelSize: 12
+}
+
+Text {
+    id: text2
+    x: 4526
+    y: 4771
+    width: 177
+    height: 49
+    text: qsTr("Text")
+    font.pixelSize: 12
+}
+
+Text {
+    id: text3
+    x: 4526
+    y: 4826
+    width: 177
+    height: 58
+    text: qsTr("Text")
+    font.pixelSize: 12
+}
+
+Button {
+    id: button2
+    x: 4709
+    y: 4771
+    width: 129
+    height: 49
+    text: qsTr("Button")
+}}
+
+Button {
+    id: button3
+    x: 323
+    y: 190
+    text: qsTr("Button")
+}
+
+}

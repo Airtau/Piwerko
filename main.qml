@@ -9,7 +9,7 @@ ApplicationWindow {
     title: qsTr("PIWERKO")
     StackView {
         id: stack
-        initialItem: mainView
+        //initialItem: Mai
         anchors.fill: parent
     }
 
