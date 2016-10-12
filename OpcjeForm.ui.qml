@@ -4,87 +4,87 @@ import QtQuick.Layouts 1.2
 
 
 Item {
+    id: item1
+    property alias button1: button1
+    property alias button2: button2
+    property alias textInput1: textInput1
+    property alias text1: text1
+    property alias text2: text2
+    property alias text3: text3
+    Button {
+        id: button1
+        x: 327
+        y: 81
+        width: 154
+        height: 87
+        text: qsTr("+")
+    }
 
-    ApplicationWindow
-    {
-        id: opcje
-        width: 500
-        height: 500
-        color: "#fbfbfb"
-        title: "START"
+    TextInput {
+        id: textInput1
+        x: 110
+        y: 45
+        width: 211
+        height: 70
+        text: qsTr("|")
+        clip: false
+        cursorVisible: true
+        opacity: 1
+        selectionColor: "#1915a1"
+        font.pixelSize: 12
+    }
 
+    Text {
+        id: text1
+        text: qsTr("Text")
+        anchors.top: parent.top
+        anchors.topMargin: 114
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 281
+        anchors.left: parent.left
+        anchors.leftMargin: 110
+        anchors.right: parent.right
+        anchors.rightMargin: 319
+        font.pixelSize: 12
+    }
 
+    Text {
+        id: text2
+        text: qsTr("Text")
+        anchors.top: parent.top
+        anchors.topMargin: 199
+        anchors.right: parent.right
+        anchors.rightMargin: 319
+        anchors.left: parent.left
+        anchors.leftMargin: 110
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 196
+        font.pixelSize: 12
+    }
 
-        RowLayout {
-            anchors.centerIn: parent
+    Text {
+        id: text3
+        text: qsTr("Text")
+        anchors.right: parent.right
+        anchors.rightMargin: 319
+        anchors.left: parent.left
+        anchors.leftMargin: 110
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 104
+        anchors.top: parent.top
+        anchors.topMargin: 285
+        font.pixelSize: 12
+    }
 
-        }
-
-
-
-TextInput {
-    id: textInput1
-    x: 4526
-    y: 4632
-    width: 177
-    height: 33
-    text: qsTr("Text Input")
-    font.pixelSize: 12
-}
-
-Button {
-    id: button1
-    x: 4726
-    y: 4632
-    width: 112
-    height: 33
-    text: qsTr("Button")
-}
-
-Text {
-    id: text1
-    x: 4526
-    y: 4703
-    width: 177
-    height: 28
-    text: qsTr("Text")
-    font.pixelSize: 12
-}
-
-Text {
-    id: text2
-    x: 4526
-    y: 4771
-    width: 177
-    height: 49
-    text: qsTr("Text")
-    font.pixelSize: 12
-}
-
-Text {
-    id: text3
-    x: 4526
-    y: 4826
-    width: 177
-    height: 58
-    text: qsTr("Text")
-    font.pixelSize: 12
-}
-
-Button {
-    id: button2
-    x: 4709
-    y: 4771
-    width: 129
-    height: 49
-    text: qsTr("Button")
-}}
-
-Button {
-    id: button3
-    x: 323
-    y: 190
-    text: qsTr("Button")
-}
+    Button {
+        id: button2
+        x: 327
+        y: 225
+        width: 154
+        height: 78
+        text: qsTr("Wróć")
+    }
 
 }
+
+
