@@ -4,9 +4,9 @@ import QtQuick.Dialogs 1.2
 
 MainForm {
    //anchors.fill: parent
-    button1.onClicked: stack.replace('qrc:/Zaprosludzi.qml')
-    button2.onClicked: stack.replace('qrc:/Opcje.qml')
-    button3.onClicked: stack.replace('qrc:/Pokazlokalizacje.qml')
+    button1.onClicked: stack.push('qrc:/Zaprosludzi.qml')
+    button2.onClicked: stack.push('qrc:/Opcje.qml')
+    button3.onClicked: stack.push('qrc:/Pokazlokalizacje.qml')
     button4.onClicked: Qt.quit()
 
 }

@@ -14,7 +14,7 @@ Item {
     Button {
         id: button1
         x: 327
-        y: 81
+        y: 80
         width: 154
         height: 87
         text: qsTr("+")
