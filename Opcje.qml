@@ -10,7 +10,7 @@ OpcjeForm
 
    Connections {
        target: chleb
-       onWypieczony: console.log("smacznego")
+       //onWypieczony: console.log("smacznego")
    }
         //anchors.fill: parent
     }
