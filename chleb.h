@@ -8,9 +8,11 @@ class chleb : public QObject
 public:
     explicit chleb(QObject *parent = 0);
     Q_INVOKABLE void wypiecz();
+    Q_INVOKABLE void wysyl(QObject *wyslane);
 
 signals:
     void wypieczony();
+    void wysylacz();
 
 public slots:
 };

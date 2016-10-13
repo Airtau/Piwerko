@@ -7,6 +7,7 @@ Item {
     property alias button1: button1
     property alias button3: button3
     property alias button2: button2
+    property alias textInput1: textInput1
 
     TextInput {
         id: textInput1
@@ -14,7 +15,9 @@ Item {
         y: 38
         width: 168
         height: 194
-        text: qsTr("Text Input")
+        color: "#d51818"
+        text: qsTr("Text Inputg")
+        selectionColor: "#06053a"
         font.pixelSize: 12
     }
 
@@ -32,7 +35,7 @@ Item {
         x: 47
         y: 268
         width: 168
-        height: 66
+        height: 49
         text: qsTr("Label")
     }
 
