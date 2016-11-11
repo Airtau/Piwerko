@@ -8,19 +8,15 @@ OpcjeForm
 
   // button1.onClicked: chleb.wypiecz()
    property int i: 0
+   property string re: textArea1.text
    button1.onClicked: zamiana()
    button2.onClicked: stack.pop()
 
    Connections {
        target: chleb
-       //onWypieczony: console.log("smacznego")
    }
-        //anchors.fill: parent
    function zamiana()
-   {   //var i
-       var re;
-
-       re =textInput1.text
+   {
    if (i==0)
        {
           text1.text = re
@@ -32,8 +28,7 @@ OpcjeForm
           text2.text = re
           console.log(re)
           i++
-
-   }
+}
 else if (i==2)
       {
               text3.text = re

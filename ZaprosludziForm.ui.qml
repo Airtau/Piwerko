@@ -7,20 +7,8 @@ Item {
     property alias button1: button1
     property alias button3: button3
     property alias button2: button2
-    property alias textInput1: textInput1
-
-    TextInput {
-        id: textInput1
-        x: 47
-        y: 38
-        width: 168
-        height: 194
-        color: "#d51818"
-        text: qsTr("Text Inputg")
-        selectionColor: "#06053a"
-        font.pixelSize: 12
-    }
-
+    property alias textArea1: textArea1
+    property alias textArea2: textArea2
     Button {
         id: button1
         x: 221
@@ -42,16 +30,32 @@ Item {
     Button {
         id: button2
         x: 221
-        y: 268
+        y: 141
         text: qsTr("...")
     }
 
     Button {
         id: button3
         x: 221
-        y: 150
+        y: 244
         width: 98
         height: 73
         text: qsTr("Wroc")
+    }
+
+    TextArea {
+        id: textArea1
+        x: 26
+        y: 27
+        width: 189
+        height: 101
+    }
+
+    TextArea {
+        id: textArea2
+        x: 26
+        y: 141
+        width: 189
+        height: 82
     }
 }
