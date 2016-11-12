@@ -23,7 +23,7 @@ qDebug() << numer;
 sms1 *a1;
 a1->WYSLIJSMS(wyslane, numer);
 //a1->My_Procedure_Call_SendSMS(1);
-
+a1->My_Procedure_Call_ReceiveSMS(2);
 QString a = "telefontumasz";
 EmotionalWinterMaager *z;
 z = new EmotionalWinterMaager();
