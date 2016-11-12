@@ -2,6 +2,7 @@
 #include <QtAndroidExtras/QAndroidJniObject> // For JNI, need to select Android Build
 #include <QAndroidJniObject>
 #include <qdebug.h>
+#include <QString>
 
 int sms1::My_Procedure_Call_SendSMS(int n)
 {
@@ -18,12 +19,11 @@ Answer2 =  QAndroidJniObject::callStaticMethod<jint>("org/qtproject/qt5/android/
 return Answer2;
 }
 
-void sms1::WYSLIJSMS()
+void sms1::WYSLIJSMS(QString numer, QString tekstwiadomosci)
 {
-    QAndroidJniObject activity = QAndroidJniObject::callStaticObjectMethod("org/qtproject/qt5/android/QtNative",
+    QAndroidJniObject activity = QAndroidJniObject::callStaticObjectMethod("org/qtproject/qt5/android/QtNative.java",
                                                                             "activity",
                                                                             "()Landroid/app/Activity;");
-    qDebug() << "wlaczyles!!!!!!!";
     if (activity.isValid()){
         qDebug() << "cos zlego z aktywnoscia...";
     }
@@ -34,23 +34,23 @@ void sms1::WYSLIJSMS()
             qDebug() << "wywala";
         }
         else {
-    qDebug() << "test1";
 
-            QAndroidJniObject myPhoneNumber = QAndroidJniObject::fromString("790730600");
-           qDebug() << "numer";
-            QAndroidJniObject myTextMessage = QAndroidJniObject::fromString("testuje, daj znac czy masz tego sms");
-            qDebug() << "tekst";
+
+
+
+            QAndroidJniObject myPhoneNumber = QAndroidJniObject::fromString(numer);
+            QAndroidJniObject myTextMessage = QAndroidJniObject::fromString(tekstwiadomosci);
             QAndroidJniObject scAddress = NULL;
-            QAndroidJniObject sentIntent = NULL;
-            QAndroidJniObject deliveryIntent = NULL;
+            //QAndroidJniObject sentIntent = NULL;
+           // QAndroidJniObject deliveryIntent = NULL;
 
 
-            mySmsManager.callMethod<void>("sendTextMessage",
+           mySmsManager.callMethod<void>("sendTextMessage",
                                           "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V",
                                           myPhoneNumber.object<jstring>(),
                                           NULL,
                                           myTextMessage.object<jstring>(), NULL, NULL );
-            qDebug() << "tu wywala";
+
         }}
 
 

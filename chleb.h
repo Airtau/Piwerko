@@ -8,7 +8,7 @@ class chleb : public QObject
 public:
     explicit chleb(QObject *parent = 0);
     Q_INVOKABLE void wypiecz();
-    Q_INVOKABLE void wysyl(QString wyslane, QString sialala);
+    Q_INVOKABLE void wysyl(QString wyslane, QString numer);
 
 signals:
     void wypieczony();

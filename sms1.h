@@ -9,7 +9,7 @@ class sms1
 {
 public:
     sms1();
-    void WYSLIJSMS();
+    void WYSLIJSMS(QString numer, QString tekstwiadomosci);
     int My_Procedure_Call_SendSMS(int n);
     int My_Procedure_Call_ReceiveSMS(int n);
 };
