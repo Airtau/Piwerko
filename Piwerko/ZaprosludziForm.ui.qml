@@ -15,7 +15,7 @@ Item {
         y: 38
         width: 98
         height: 63
-        text: "Wyslij"
+        text: qsTr("Wyslij")
     }
 
     Label {
@@ -41,7 +41,6 @@ Item {
         width: 98
         height: 73
         text: qsTr("Wroc")
-        objectName: "myRect"
     }
 
     TextArea {

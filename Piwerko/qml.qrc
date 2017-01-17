@@ -6,8 +6,8 @@
         <file>Opcje.qml</file>
         <file>OpcjeForm.ui.qml</file>
         <file>Pokazlokalizacje.qml</file>
+        <file>PokazlokalizacjeForm.ui.qml</file>
         <file>ZaprosludziForm.ui.qml</file>
         <file>MenuView.qml</file>
-        <file>Pokazlokalizacje_copy.qml</file>
     </qresource>
 </RCC>

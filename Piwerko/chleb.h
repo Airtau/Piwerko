@@ -9,7 +9,7 @@ public:
     explicit chleb(QObject *parent = 0);
     Q_INVOKABLE void wypiecz();
     Q_INVOKABLE void wysyl(QString wyslane, QString numer);
-    Q_INVOKABLE void lap1(QString lokalizalicja);
+
 signals:
     void wypieczony();
     void wysylacz();

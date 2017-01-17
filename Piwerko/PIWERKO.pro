@@ -1,28 +1,21 @@
 TEMPLATE = app
 
-
+android: QT += androidextras
 QT += sensors
 QT += sql
-QT += qml
-QT += quick
+QT += qml quick widgets
 QT += positioning
-QT += network
-QT += location
-QT += widgets
-android: QT += androidextras
-
 
 
 CONFIG += c++11
 CONFIG += mobility
 MOBILITY += sensors
-MOBILITY  += location
 
 SOURCES += main.cpp \
     chleb.cpp \
+    baza.cpp \
     emotionalwintermaager.cpp \
-    sms1.cpp \
-    gps.cpp
+    sms1.cpp
 
 RESOURCES += qml.qrc
 
@@ -36,10 +29,10 @@ include(deployment.pri)
 HEADERS += \
     chleb.h \
     emotionalwintermaager.h \
-    sms1.h \
-    gps.h \
+    sms1.h
 
 DISTFILES += \
+    MyActivity.java \
     My_Java_Procedures.java \
     android/AndroidManifest.xml \
     android/gradle/wrapper/gradle-wrapper.jar \
@@ -47,8 +40,6 @@ DISTFILES += \
     android/res/values/libs.xml \
     android/build.gradle \
     android/gradle/wrapper/gradle-wrapper.properties \
-    android/gradlew.bat \
-    MyActivity.java
+    android/gradlew.bat
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
-

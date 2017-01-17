@@ -7,10 +7,7 @@ MainForm {
     button1.onClicked: stack.push('qrc:/Zaprosludzi.qml')
     button2.onClicked: stack.push('qrc:/Opcje.qml')
     button3.onClicked: stack.push('qrc:/Pokazlokalizacje.qml')
-
     button4.onClicked: Qt.quit()
-Connections {
-    target: emotionawintermaager
-}
+
 }
 
