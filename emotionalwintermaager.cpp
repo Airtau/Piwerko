@@ -20,6 +20,8 @@ menager = new QNetworkAccessManager(this);
 connect(menager, SIGNAL (finished(QNetworkReply*)),this, SLOT(tepa(QNetworkReply*)));
 otoon = new QNetworkAccessManager(this);
     connect(otoon, SIGNAL (finished(QNetworkReply*)),this, SLOT(otoona(QNetworkReply*)));
+qml = new QNetworkAccessManager(this);
+        connect(qml, SIGNAL (finished()),this, SLOT(odleglosci()));
 }
 
 void EmotionalWinterMaager::tepa(QNetworkReply *dzida)
@@ -64,8 +66,9 @@ QString nowe1 = "http://panoramix.ift.uni.wroc.pl/~kzoladziejewski/costam1.php";
 void EmotionalWinterMaager::odleglosci(QString numerek, QString lokal)
 {
 
-    //QQuickView view;
+ /*
     QQmlApplicationEngine engine;
+
     qDebug() << "A1";
     //view.setSource(QUrl(QStringLiteral("qrc:/Pokazlokalizacje.qml")));
     engine.load(QUrl(QStringLiteral("qrc:/Pokazlokalizacje.qml")));
@@ -82,6 +85,7 @@ void EmotionalWinterMaager::odleglosci(QString numerek, QString lokal)
 
         qDebug() << "A6 ";
 
-
+*/
+    emit Doqml("MyRect1");
 
 }

@@ -25,10 +25,13 @@ public slots:
 signals:
     void costam(QString costam1);
     void lubiecisze(QString duzociszy);
+    void Doqml(QString numer);
+
 
 private:
      QNetworkAccessManager *menager;
      QNetworkAccessManager *otoon;
+     QNetworkAccessManager *qml;
 };
 
 #endif // EMOTIONALWINTERMAAGER_H

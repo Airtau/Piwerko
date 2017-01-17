@@ -4,10 +4,14 @@ import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.2
 
 Item {
+    Connections {
+       target: qml;
+       onDoqml: myRect1.text = miOdpisac;
+    }
 
     property alias button1: button1.text
     property alias text1Text: text1.text
-  /*  property alias lokalizacja1: lokalizacja1
+   property alias lokalizacja1: lokalizacja1
     property alias text2: text2
     property alias lokalizacja2: lokalizacja2
     property alias text3: text3
@@ -17,7 +21,7 @@ Item {
     property alias text5: text5
     property alias lokalizacja5: lokalizacja5
     property alias text6: text6
-    property alias lokalizacja6: lokalizacja6*/
+    property alias lokalizacja6: lokalizacja6
 Rectangle
 {   anchors.fill: parent
     objectName: "myRect"
@@ -47,7 +51,7 @@ Rectangle
         font.pixelSize: 12
         objectName: "myRect1"
     }
-/*
+
     Text {
         id: lokalizacja1
         x: 207
@@ -157,7 +161,7 @@ Rectangle
         height: 28
         text: qsTr("lOKALIZACJA")
         font.pixelSize: 12
-    }*/
+    }
 }}
 
 
