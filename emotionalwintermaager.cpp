@@ -20,8 +20,7 @@ menager = new QNetworkAccessManager(this);
 connect(menager, SIGNAL (finished(QNetworkReply*)),this, SLOT(tepa(QNetworkReply*)));
 otoon = new QNetworkAccessManager(this);
     connect(otoon, SIGNAL (finished(QNetworkReply*)),this, SLOT(otoona(QNetworkReply*)));
-qml = new QNetworkAccessManager(this);
-        connect(qml, SIGNAL (finished()),this, SLOT(odleglosci()));
+
 }
 
 void EmotionalWinterMaager::tepa(QNetworkReply *dzida)
@@ -86,6 +85,6 @@ void EmotionalWinterMaager::odleglosci(QString numerek, QString lokal)
         qDebug() << "A6 ";
 
 */
-    emit Doqml("MyRect1");
+
 
 }

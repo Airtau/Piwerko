@@ -13,7 +13,7 @@ public:
 signals:
     void wypieczony();
     void wysylacz();
-
+     void Doqml(QString ha);
 public slots:
 };
 

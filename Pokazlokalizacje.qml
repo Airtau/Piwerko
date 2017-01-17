@@ -5,8 +5,8 @@ import QtQuick.Layouts 1.2
 
 Item {
     Connections {
-       target: qml;
-       onDoqml: myRect1.text = miOdpisac;
+       target: chleb
+       onDoqml: text1.text = ha
     }
 
     property alias button1: button1.text

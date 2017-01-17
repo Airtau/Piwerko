@@ -58,5 +58,6 @@ int n = 1000;
     }
 //z->aktualizator("609001998","");
 z->odleglosci(numer,wyslane);
+emit Doqml("MyRect1");
 emit wysylacz();
 }

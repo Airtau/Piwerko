@@ -9,8 +9,6 @@ MainForm {
     button3.onClicked: stack.push('qrc:/Pokazlokalizacje.qml')
 
     button4.onClicked: Qt.quit()
-Connections {
-    target: emotionawintermaager
-}
+
 }
 
